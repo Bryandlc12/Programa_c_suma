@@ -23,3 +23,10 @@ int suma (struct valores sum1, struct valores sum2){
     printf("La suma de la suma de fracciones las%d/%d + %d/%d es %d/%d\n", sum1.a, sum1.b, sum2.a, sum2.b, suma1, suma2);
  return 0;
 }
+
+int resta (struct valores sum1, struct valores sum2){
+    int resta1 = sum1.a * sum2.b - sum2.a * sum1.b;
+    int resta2 = sum1.b * sum2.b;
+
+    printf("La resta de la resta de las fracciones %d/%d y %d/%d es %d/%d\n", sum1.a, sum1.b, sum2.a, sum2.b, resta1, resta2);
+}
