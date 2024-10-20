@@ -30,3 +30,10 @@ int resta (struct valores sum1, struct valores sum2){
 
     printf("La resta de la resta de las fracciones %d/%d y %d/%d es %d/%d\n", sum1.a, sum1.b, sum2.a, sum2.b, resta1, resta2);
 }
+
+int divicion (struct valores sum1, struct valores sum2){
+    int divicion1 = sum1.a * sum2.b;
+    int divicion2 = sum2.a * sum1.b;
+
+    printf("El resultado de la división de las fracciones %d/%d y %d/%d es: %d/%d\n", sum1.a, sum1.b, sum2.a, sum2.b, divicion1, divicion2);
+}
