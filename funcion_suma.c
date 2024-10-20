@@ -15,5 +15,11 @@ int main (void) {
     suma (val1, val2);
     resta (val1, val2);
     divicion(val1, val2);
-
+}
+int suma (struct valores sum1, struct valores sum2){
+    int suma1 = (sum1.a * sum2.b) + (sum2.a * sum1.b);
+    int suma2 = sum1.b * sum2.b;
+    
+    printf("La suma de la suma de fracciones las%d/%d + %d/%d es %d/%d\n", sum1.a, sum1.b, sum2.a, sum2.b, suma1, suma2);
+ return 0;
 }
